@@ -27,7 +27,7 @@ body {
 }
 
 .logo {
-    width: 60%;
+    width: 120%;
     max-width: 600px;
     height: auto;
     margin-bottom: 1.5rem;
@@ -52,31 +52,4 @@ body {
     background-color: #007bff;
     padding: 10px 20px;
     margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-    .container {
-        width: 90%;
-        padding: 1rem;
-    }
-
-    .logo {
-        width: 80%;
-        max-width: 200px;
-    }
-
-    .title {
-        font-size: 2rem;
-    }
-
-    .tagline {
-        font-size: 1.2rem;
-    }
-}
+    bor
