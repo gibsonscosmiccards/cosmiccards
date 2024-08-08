@@ -1,0 +1,56 @@
+/* Basic reset */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
