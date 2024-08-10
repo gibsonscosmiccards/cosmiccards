@@ -20,7 +20,7 @@ header {
 }
 
 header .logo img {
-    max-width: 650px;
+    max-width: 650px; /* Default size for desktop */
     height: auto;
 }
 
@@ -73,4 +73,51 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    header .logo img {
+        max-width: 400px; /* Adjusted size for mobile */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header .tagline {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .map iframe {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        max-width: 300px; /* Further adjusted size for very small screens */
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header .tagline {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .map iframe {
+        height: 150px; /* Further adjust height for very small screens */
+    }
 }
