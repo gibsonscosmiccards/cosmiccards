@@ -121,3 +121,33 @@ footer {
         height: 150px; /* Further adjust height for very small screens */
     }
 }
+.brand-logos-slideshow {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.brand-logos-slideshow h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 300px;
+    margin: auto;
+}
+
+.logo-slide {
+    display: none;
+    width: 100%;
+    height: 100px;
+}
+
+.logo-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
