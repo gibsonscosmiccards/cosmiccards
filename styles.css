@@ -65,13 +65,12 @@ main {
     max-width: 100%;
 }
 
-/* Footer styling */
+/* Footer */
 footer {
     background-color: #0d6efd;
     color: #fff;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Changed from fixed to prevent overlap */
     width: 100%;
 }
 
@@ -124,6 +123,7 @@ footer {
 .brand-logos-slideshow {
     margin-top: 40px;
     text-align: center;
+    padding-bottom: 80px; /* Extra space to prevent footer overlap */
 }
 
 .brand-logos-slideshow h2 {
@@ -134,18 +134,19 @@ footer {
 .slideshow-container {
     position: relative;
     max-width: 300px;
+    height: 120px; /* Fixed height to prevent page shifting */
     margin: auto;
 }
 
 .logo-slide {
     display: none;
     width: 100%;
-    height: 100px;
+    height: 100%;
 }
 
 .logo-slide img {
     width: 100%;
-    height: auto;
+    height: 100%;
     object-fit: contain;
     border: 1px solid #ddd;
     border-radius: 8px;
