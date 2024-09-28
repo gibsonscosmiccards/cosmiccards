@@ -1,0 +1,191 @@
+/* Reset some basic styles */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .logo img {
+    max-width: 650px; /* Default size for desktop */
+    height: auto;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-top: 10px;
+}
+
+header .tagline {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Main content styling */
+main {
+    margin: 20px;
+}
+
+/* Layout for about box and map */
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    gap: 20px;
+}
+
+.about-box {
+    flex: 1;
+    max-width: 400px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.about-box h2 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.about-box p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Adjust the map to take the remaining space next to the about box */
+.map {
+    flex: 2;
+    max-width: 600px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    border: 0;
+}
+
+/* Buttons styling */
+.buttons {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Slideshow styling */
+.brand-logos-slideshow {
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 80px; /* Extra space to prevent footer overlap */
+}
+
+.brand-logos-slideshow h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 300px;
+    height: 120px; /* Fixed height to prevent page shifting */
+    margin: auto;
+}
+
+.logo-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Footer styling */
+footer {
+    background-color: #0d6efd;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 768px) {
+    header .logo img {
+        max-width: 400px; /* Adjusted size for mobile */
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header .tagline {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .map iframe {
+        height: 200px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo img {
+        max-width: 300px; /* Further adjusted size for very small screens */
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header .tagline {
+        font-size: 0.9em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    .map iframe {
+        height: 150px; /* Further adjust height for very small screens */
+    }
+}
