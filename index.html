@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gibson's Cosmic Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- Replace 'logo.png' with your actual logo file -->
+            <a href="/">
+            <img src="gibsonscosmic.png" alt="Gibson's Cosmic Cards Logo">
+            </a>
+        </div>
+        <h1>Gibson's Cosmic Cards</h1>
+        <p class="tagline">Coming Soon</p>
+    </header>
+    <main>
+        <div class="buttons">
+            <a href="/contact.html" class="btn">Contact</a>
+            <a href="/livestreams.html" class="btn">Livestreams</a>
+        </div>
+         <div class="content-wrapper">
+        <div class="about-box">
+            <h2>About Gibson's Cosmic Cards</h2>
+            <p>
+                Gibson's Cosmic Cards is a family-owned hobby store serving the Dallas-Fort Worth (DFW) area for over 60 years. As your local source for all things collectible, we specialize in a wide range of sports cards, trading card games (TCGs) like Magic: The Gathering and Pokémon, as well as hobby modeling kits and Warhammer products, including Warhammer 40k and the full Games Workshop catalog. 
+            </p>
+            <p>
+                Whether you're looking for the latest Topps and Panini sports cards or collectible sets from Wizards of the Coast, we are proud to offer a comprehensive selection of premium products for collectors and hobbyists alike. Visit our store in Weatherford, TX, and experience our rich tradition of customer service and passion for the hobby.
+            </p>
+        </div>
+
+        <div class="map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13194.511575929758!2d-97.8002312!3d32.7514574!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864d62fd4a0565f3%3A0x15a0a8b9c4b3f070!2s411%20S%20Main%20St%2C%20Weatherford%2C%20TX%2076086!5e0!3m2!1sen!2sus!4v1694302328808!5m2!1sen!2sus"
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- New section for brand logos slideshow -->
+    <div class="brand-logos-slideshow">
+        <h2>Brands We Carry</h2>
+        <div class="slideshow-container">
+            <div class="logo-slide">
+                <img src="warhammer.png" alt="Warhammer">
+            </div>
+            <div class="logo-slide">
+                <img src="topps.png" alt="Topps">
+            </div>
+            <div class="logo-slide">
+                <img src="panini.png" alt="Panini">
+            </div>
+            <div class="logo-slide">
+                <img src="magic.png" alt="Magic">
+            </div>
+            <!-- Add more logo slides as needed -->
+        </div>
+    </div>
+</main>
+
+<!-- Include JavaScript for slideshow -->
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("logo-slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }    
+        slides[slideIndex-1].style.display = "block";  
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gibson's Cosmic Cards</p>
+    </footer>
+</body>
+</html>
